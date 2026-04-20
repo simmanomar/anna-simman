@@ -4,6 +4,9 @@
     font-size: var(--body-md);
     height: 32px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .primary {
