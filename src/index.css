@@ -1,110 +1,113 @@
 :root {
-  --color-primary: #2c2c2c;
-  --color-neutral: #e3e3e3;
-  --color-subtle: transparent;
-  --color-background: #ffffff;
-  --color-primary-text: #000000;
-  --color-secondary-text: #757575;
-  --color-accent: #5b4fcf;
-  --text-brand-onbrand: #5b4fcf;
-  --border-brand-default: #5b4fcf;
-  --border-neutral-secondary: #5b4fcf;
+    --color-primary: #2c2c2c;
+    --color-neutral: #e3e3e3;
+    --color-subtle: transparent;
+    --color-background: #ffffff;
+    --color-primary-text: #000000;
+    --color-secondary-text: #757575;
+    --color-accent: #5b4fcf;
+    --text-brand-onbrand: #5b4fcf;
+    --border-brand-default: #5b4fcf;
+    --border-neutral-secondary: #5b4fcf;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+    --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+    --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+    --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --spacing-sm: 8px;
+    --body-md: 16px;
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+    font: 18px/145% var(--sans);
+    letter-spacing: 0.18px;
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #e3e3e3;
-    --color-neutral: #3a3a3a;
-    --color-subtle: transparent;
-    --color-background: #121212;
-    --color-primary-text: #f0f0f0;
-    --color-secondary-text: #a0a0a0;
-    --color-accent: #7b6fd8;
-    --text-brand-onbrand: #7b6fd8;
-    --border-brand-default: #7b6fd8;
-    --border-neutral-secondary: #4a4a4a;
-    --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+    :root {
+        --color-primary: #2c2c2c;
+        --color-neutral: #e3e3e3;
+        --color-subtle: transparent;
+        --color-background: #ffffff;
+        --color-primary-text: #000000;
+        --color-secondary-text: #757575;
+        --color-accent: #5b4fcf;
+        --text-brand-onbrand: #5b4fcf;
+        --border-brand-default: #5b4fcf;
+        --border-neutral-secondary: #5b4fcf;
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+        --shadow: rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    }
+
+    #social .button-icon {
+        filter: invert(1) brightness(2);
+    }
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+    width: 1126px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-inline: 1px solid var(--border);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 h1,
 h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+    font-family: var(--heading);
+    font-weight: 500;
+    color: var(--text-h);
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+    font-size: 56px;
+    letter-spacing: -1.68px;
+    margin: 32px 0;
+    @media (max-width: 1024px) {
+        font-size: 36px;
+        margin: 20px 0;
+    }
 }
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+    font-size: 24px;
+    line-height: 118%;
+    letter-spacing: -0.24px;
+    margin: 0 0 8px;
+    @media (max-width: 1024px) {
+        font-size: 20px;
+    }
 }
 p {
-  margin: 0;
+    margin: 0;
 }
 
 code,
 .counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+    font-family: var(--mono);
+    display: inline-flex;
+    border-radius: 4px;
+    color: var(--text-h);
 }
 
 code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+    font-size: 15px;
+    line-height: 135%;
+    padding: 4px 8px;
+    background: var(--code-bg);
 }
